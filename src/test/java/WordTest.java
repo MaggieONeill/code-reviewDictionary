@@ -9,4 +9,11 @@ public class WordTest{
     Word myWord = new Word("bae");
     assertEquals(true, myWord instanceof Word);
   }
+
+  @Test
+  public void word_instantiationAddsToInstances() {
+    Word testWord = new Word("bae");
+    assertEquals(1, Word.all().size());
+
+  }
 }

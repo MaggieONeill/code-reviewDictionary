@@ -17,5 +17,7 @@ public class Word {
   public ArrayList<Definition>getDefinition(){
     return mDefinition;
   }
-
+  public void addDefinition(Definition definition){
+    mDefinition.add(definition);
+  }
 }
