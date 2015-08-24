@@ -14,10 +14,36 @@ public class Word {
     mDefinition = new ArrayList<Definition>();
   }
 
+  public String getName(){
+     return mName;
+   }
+
+   public int getId(){
+     return mId;
+   }
+
   public ArrayList<Definition>getDefinition(){
     return mDefinition;
   }
+
+
   public void addDefinition(Definition definition){
     mDefinition.add(definition);
   }
+
+  public static ArrayList<Word> all(){
+  return instances;
+}
+
+public static void clear() {
+  instances.clear();
+}
+
+public static Word find(int id){
+  try{
+    return instances.get(id-1);
+  } catch (IndexOutOfBoundsException exception){
+    return null;
+  }
+}
 }

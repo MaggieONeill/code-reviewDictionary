@@ -8,6 +8,8 @@ public class Definition{
 
   public  Definition(String description){
     mDescription = description;
+    instances.add(this);
+    mId = instances.size();
 
   }
 
@@ -17,6 +19,10 @@ public class Definition{
 
   public static ArrayList<Definition> all(){
     return instances;
+  }
+
+  public int getId(){
+    return mId;
   }
 
   public static void clear(){
