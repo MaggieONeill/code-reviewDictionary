@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class Definition{
   private static ArrayList<Definition> instances = new ArrayList<Definition>();
 
-  String mDescription;
+  private String mDescription;
+  private int mId;
 
 
   public  Definition(String description){

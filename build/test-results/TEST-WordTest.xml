@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-08-22T01:26:32" hostname="epicodus-102.local" time="0.001">
+<testsuite name="WordTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-08-26T00:46:40" hostname="epicodus-114.local" time="0.002">
   <properties/>
-  <testcase name="Word_instantiatesCorrectly_true" classname="WordTest" time="0.001"/>
+  <testcase name="getId_returnsWordId_1" classname="WordTest" time="0.001"/>
+  <testcase name="find_returnsNullIfNothingMatches" classname="WordTest" time="0.0"/>
+  <testcase name="Word_instantiatesCorrectly_true" classname="WordTest" time="0.0"/>
+  <testcase name="addDefinition_addsToDefinitions_true" classname="WordTest" time="0.0"/>
+  <testcase name="addDefinition_addsToDefinitions_1" classname="WordTest" time="0.0"/>
+  <testcase name="all_returnsAllInstancesOfWord_true" classname="WordTest" time="0.0"/>
+  <testcase name="clear_clearsInstances" classname="WordTest" time="0.0"/>
+  <testcase name="getName_returnsname" classname="WordTest" time="0.0"/>
+  <testcase name="word_instantiationAddsToInstances" classname="WordTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

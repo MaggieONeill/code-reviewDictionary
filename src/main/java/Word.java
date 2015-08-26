@@ -3,9 +3,11 @@ import java.util.ArrayList;
 public class Word {
 
   private static ArrayList<Word> instances = new ArrayList<Word>();
-  private ArrayList<Definition> mDefinition;
+
   private String mName;
   private int mId;
+  
+  private ArrayList<Definition> mDefinition;
 
   public Word(String name){
     mName = name;
@@ -22,7 +24,7 @@ public class Word {
      return mId;
    }
 
-  public ArrayList<Definition>getDefinition(){
+  public ArrayList<Definition>getDefinitions(){
     return mDefinition;
   }
 

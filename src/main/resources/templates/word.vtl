@@ -1,8 +1,16 @@
-<h3>Here is the definition of this word:</h3>
+<h1>Definitions of $word.getName():</h1>
 
-#foreach($definition in $word.getDefinitions())
-  <h3>$definition.getDescription()</a></h3>
-#end
+<div>
+  <ol>
+  #foreach($definition in $definitions)
+    <li>$defintion.getDescription()</li>
+  #end
+  </ol>
+</div>
 
-<a href="/words/$word.getId()/definitions/new">Add a another definition</a>
-<a href="/">Return to Main Page</a>
+<div>
+  <a href="/words/$word.getId()/defintions/new">Add a New Definition</a>
+</div>
+<div>
+<a href="/">Return to Word List</a>
+</div>

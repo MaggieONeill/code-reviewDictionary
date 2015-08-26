@@ -1,4 +1,14 @@
 <h1>Dictionary!</h1>
 
-<a href="/words">View word list</a>
-<a href="/words/new">Add a new word</a>
+  <div>
+    <ol>
+
+      #foreach($word in $words)
+        <li><a hreg="/words/$word.getId()">$word.getName()</a></li>
+      #end
+    </ol>
+  </div>
+
+<div>
+  <a href="/words/new">Add a New Word</a>
+</div>

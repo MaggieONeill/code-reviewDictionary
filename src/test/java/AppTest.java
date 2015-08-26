@@ -24,10 +24,10 @@ public class AppTest extends FluentTest {
   @Rule
   public ClearRule clearRule = new ClearRule();
 
-  // @Test
-  // public void rootTest(){
-  //   goTo("http://localhost:4567/");
-  //   assertThat(pageSource()).contains("Dictionary!");
-  // }
+  @Test
+  public void rootTest(){
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Dictionary!");
+  }
 
 }
